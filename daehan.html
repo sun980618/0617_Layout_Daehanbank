@@ -10,30 +10,24 @@
 <body>
 
     <div id="headerFrame">
-<header id="header" class="flex-container">
-        <div id="headerLogo">
-            <!-- div#headerLogo>a>img+nav#gnb-->
 
-            <img src="images/logo_Header_200x40.png" alt="header">
-        </div>
-        <!--headerLogo-->
-        <nav id="gnb">
-            <!--ul#mainMenu>li.mainLi*4>a[href=#]-->
-            <ul id="mainMenu" class="flex-container">
-                <li class="mainLi">
-                    <a href="#">개인</a>
-                </li>
-                <li class="mainLi">
-                    <a href="#">기업</a>
-                </li>
-                <li class="mainLi">
-                    <a href="#">금융상품</a>
-                </li>
-                <li class="mainLi">
-                    <a href="#">카드</a>
-                </li>
-            </ul>
-        </nav>
+        <header id="header" class="flex-container">
+
+            <div id="headerLogo">
+                <!-- div#headerLogo>a>img+nav#gnb-->
+                <img src="images/logo_Header_200x40.png" alt="header">
+            </div>
+            <!--headerLogo-->
+
+            <nav id="gnb">
+                <!--ul#mainMenu>li.mainLi*4>a[href=#]-->
+                <ul id="mainMenu" class="flex-container">
+                    <li class="mainLi"><a href="#">개인</a></li>
+                    <li class="mainLi"><a href="#">기업</a></li>
+                    <li class="mainLi"><a href="#">금융상품</a></li>
+                    <li class="mainLi"><a href="#">카드</a></li>
+                </ul>
+            </nav>
         </header>
     </div>
     <!--headerFrame-->
@@ -41,17 +35,55 @@
     <div id="wrap">
 
         <div id="slide">
-
-            <!--<img src="images/slideImg_01.jpg" alt="slide">-->
-
+            <img src="images/slideImg_01.jpg" alt="slide">
+            <span>
+                늘 곁에, 더 가까이<br>
+                소호 컨설팅을 대한은행과 함께 합니다.<br>
+                적은 돈으로 목돈 만들기!!
+            </span>
         </div>
         <!--slide-->
 
-        <div id="contents">
+        <div id="contents" class="flex-container">
+            <!-- div#bbs+div#banner+div#shortcut-->
+            <div id="bbs">
+                <!--button[type=button class=tabBtn]*2+div.tabContents-->
+                <button type="button" class="tabBtn">
+                    공지사항
+                </button>
+                <button type="button" class="tabBtn">
+                    갤러리
+                </button>
+                <div class="tabContents">
+                    <!--table>tbody>tr*3>td*2-->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>바이오 인증을 일요한</td>
+                                <td>04.17</td>
+                            </tr>
+                            <tr>
+                                <td>KB켈라론</td>
+                                <td>04.17</td>
+                            </tr>
+                            <tr>
+                                <td>2019년 취업박람회 안내</td>
+                                <td>04.17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--bbs-->
 
-            <!--<img src="images/banner_01_294x294.png" alt="banner">
+            <div id="banner">
+                <img src="images/banner_01_294x294.png" alt="banner">
+            </div>
+            <!--banner-->
 
-            <img src="images/shortcut_01_294x294.png" alt="shortcut">-->
+            <div id="shortcut">
+                <img src="images/shortcut_01_294x294.png" alt="shortcut">
+            </div>
 
         </div>
         <!--contents-->
@@ -61,12 +93,26 @@
 
     <div id="footerFrame">
 
-        <footer id="footer">
+        <footer id="footer" class="flex-container">
+            <div id="footerLogo">
+                <img src="images/logo_Footer_200x40.png" alt="footer">
+            </div>
 
-            <!--<img src="images/logo_Footer_200x40.png" alt="footer">-->
 
         </footer>
-
+<div id="companyInfo">
+    <!--nav#footerLnb>ul#footerMainmenu>li.footerMainLi*3>a[href=#]-->
+     <nav id="footerLnb">
+         <ul id="footerMainmenu" class="flex-container">
+             <li class="footerMainLi"><a href="#">법적고지</a></li>
+             <li class="footerMainLi"><a href="#">개인정보취급방침</a></li>
+             <li class="footerMainLi"><a href="#">개인정보처리방침</a></li>
+         </ul>
+     </nav>
+<div id="copyright">
+    copyright(c) 2010 BUSAN
+</div>
+</div>
     </div>
     <!--footerFrame-->
 

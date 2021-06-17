@@ -2,8 +2,7 @@
 
 /*reset*/
 * {
-    color: #222;
-    /*기본텍스트 색상*/
+    color: #222;/*기본텍스트 색상*/
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -55,31 +54,35 @@ ul {
 
 /*가이드라인*/
 div#wrap {border: 1px solid #000;}
-div#headerFrame {border: 1px solid #00f;}
-header#header {border: 1px solid #000;}
+/*div#headerFrame {border: 1px solid #00f;}
+header#header {border: 1px solid #000;}*/
 div#slide {border: 1px solid #000;}
 div#contents {border: 1px solid #000;}
-div#footerFrame {border: 1px solid #08f;}
 footer#footer {border: 1px solid #000;}
 /*가이드라인 끝*/
 
+div#wrap {
+    width: 1200px;
+    border: 1px solid #f00;
+    margin: 0 auto;
+}
 div#headerFrame {
     background-color: #0076be;
 }
 
 header#header {
     width: 1200px;
-    border: 1px solid #F00;
+    height: 100px;
     margin: 0 auto;
 }
 
 div#headerLogo {
     height: 100px;
-    line-height: 100;/*이렇게하면 세로 가운데 정렬*/
+    line-height: 100px;/*이렇게하면 세로 가운데 정렬*/
 }
 
 nav#gnb {
-border: 1px solid #000;
+/*border: 1px solid #000;*/
 
     -webkit-flex: 1px;
     -moz-flex: 1px;
@@ -90,8 +93,9 @@ border: 1px solid #000;
 
 #gnb ul#mainMenu {
     height: 100px;
-    border: 1px solid #0f0;
-    padding-top: ;
+    padding-right: 20px;
+    /*border: 1px solid #0f0;*/
+
     justify-content: flex-end; /*?*/
     align-items: center; /*#gnb li에 line-height: 100px; 넣어주는것도 가능*/
 }
@@ -99,7 +103,7 @@ border: 1px solid #000;
 #gnb a {
     width: 150px;
     height: 40px;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     line-height: 40px;
@@ -125,13 +129,71 @@ div#slide span{
     display: inline-block;
 
     position: absolute;
-    left: 50px;
-    top: 50px;
-    transform: translate(-50%,-50%)
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div#contents {
     height: 200px;
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#contents>* {
+    width: 400px;
+    border: 1px solid #000;
+}
+
+#contents>div:not(first-chlid) {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+#contents img {
+    width: 180px;
+}
+
+div#bbs {
+    padding: 10px;
+}
+
+#bbs>* {
+    border: 1px solid #eee;
+}
+
+#bbs>button.tabBtn {
+    font-size: 18px;
+    padding: 2px 8px;
+    position: relative;
+    top: 1px;
+}
+
+#bbs>button:first-child {
+    border-bottom: #eee;
+     margin-left: 20px;
+    left: 6px;
+}
+
+#bbs>button:nth-child(2) {
+    border-color:  #eee;
+    border-bottom-color: #aaa;
+}
+
+#bbs>div {
+    padding: 10px;
+}
+
+#bbs>div>table td {
+    font-size: 14px;
+    padding-bottom: 20;}
+
+#contents>div:not(:first-child)
+
 }
 
 div#footerFrame {
@@ -140,14 +202,47 @@ div#footerFrame {
 
 footer#footer {
     width: 1200px;
-    border: 1px solid #F00;
+    height: 100px;
+    /*border: 1px solid #F00;*/
     margin: 0 auto;
 }
 
+#footer>div#footerLogo {
+    height: 100px;
+    line-height: 100px;
+}
 
+#footer>div#companyInfo {
+    border: 1px solid #000;
 
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
 
+#companyInfo>* {
+    height: 50px;
+    border: 1px solid #000;
+}
 
+#companyInfo ul#footerMainmenu{
+    height: 50px;
+    border: 1px solid #0f0;
+    justify-content: center;
+    align-items: center;
+}
+
+#companyInfo li.footerMainLi {
+    padding: 0 30px;
+    border: 1px solid #000;
+}
+
+#companyInfo div#copyright {
+    text-align: center;
+    line-height: 50px;
+}
 
 
 
